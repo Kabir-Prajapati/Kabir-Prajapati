@@ -1,0 +1,147 @@
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title></title>
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 10px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                border-bottom: 3px solid transparent;
+            }
+
+                .topnav a:hover {
+                    border-bottom: 3px solid red;
+                }
+
+                .topnav a.active {
+                    border-bottom: 3px solid red;
+                }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="navbar navbar-fixed-top bg-white" style="height: 90px">
+                <div class="navbar navbar-expand-md">
+                    <div style="margin-right: 650px">
+                        <asp:Image ID="img_logo" runat="server" ImageUrl="~/Logo/Logo.png" />
+                    </div>
+                    <div>
+                        <div class="topnav">
+                            <a href="Tours.aspx" class="w3-bar-item w3-button active">Tours</a>
+                            <a href="#" class="w3-bar-item w3-button">Contact us</a>
+                            <a href="#" class="w3-bar-item w3-button">About us</a>
+                            <a href="#" class="w3-bar-item w3-button">Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div style="padding-top: 70px">
+                <div style="padding-bottom: 15px; text-align: center">
+                    <asp:Image ID="img_banner" runat="server" ImageUrl="~/Banner/Banner.png" />
+                </div>
+                <div style="padding-bottom: 15px">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="bg-dark" style="padding-left: 100px; color: white; padding-right: 100px; padding-top: 50px; padding-bottom: 50px; height: 450px">
+                    <div style="height: 300px; border-bottom: groove">
+                        <div>
+                            <div style="width: 30%; float: left; border-right: ridge; border-color: ButtonShadow; padding-right: 20px; height: 250px">
+                                <div>
+                                    <div style="padding-bottom: 25px">
+                                        <asp:Image ID="img_footer_logo" runat="server" ImageUrl="~/Footer_Logo/Logo.png" />
+                                    </div>
+                                    <div style="padding-bottom: 25px; font-size: 25px">
+                                        <b>Our Promise</b>
+                                    </div>
+                                    <div>
+                                        With ForeverVacation, you will be treated like family.
+                                    Your safety and enjoyment is our primary mission.
+                                    We are excited to meet you!
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width: 33%; float: left; padding-left: 35px; padding-right: 20px; border-right: ridge; border-color: ButtonShadow; padding-right: 20px; height: 250px">
+                                <div>
+                                    <div style="font-size: 20px; padding-bottom: 30px">
+                                        <b>NEWSLETTER</b>
+                                    </div>
+                                    <div style="padding-bottom: 15px">
+                                        Subscribe for updates & promotions
+                                    </div>
+                                    <div style="padding-bottom: 10px">
+                                        <input style="width: 300px; height: 40px" type="text" class="form-controls" id="txt_subscribe">
+                                    </div>
+                                    <div>
+                                        <button style="width: 300px; height: 40px; font-size: 20px" type="button" class="btn btn-danger"><b>SUBSCRIBE</b></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width: 25%; padding-left: 25px; float: left">
+                                <div>
+                                    <div style="font-size: 20px; padding-bottom: 30px">
+                                        <b>CONTACT INFO</b>
+                                    </div>
+                                    <div style="padding-bottom: 15px">
+                                        <b>Address :</b>
+                                    </div>
+                                    <div style="padding-bottom: 10px">
+                                        <b>Phone :</b>
+                                    </div>
+                                    <div style="padding-bottom: 40px">
+                                        <b>Email Id :</b>
+                                    </div>
+                                    <div>
+                                        <div style="float:left; padding-right:40px">
+                                            <i class="fa fa-instagram" style="font-size: 24px"></i>
+                                        </div>
+                                        <div style="float:left; padding-right:40px">
+                                            <i class="fa fa-facebook-square" style="font-size:24px"></i>
+                                        </div>
+                                        <div>
+                                            <span class="glyphicon glyphicon-envelope" style="font-size:24px"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
